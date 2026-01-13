@@ -7,6 +7,13 @@ from doctr.models import ocr_predictor
 # Use the ocr_predictor factory function with desired architectures
 model = ocr_predictor(pretrained=True,assume_straight_pages=False,
     export_as_straight_boxes=False)
+
+#previously used this 
+# Use the ocr_predictor factory function with desired architectures
+# model = ocr_predictor(det_arch='db_resnet50', reco_arch='crnn_vgg16_bn', pretrained=True)
+
+#using this
+
 # model = ocr_predictor(det_arch='db_resnet50', reco_arch='sar_resnet31', pretrained=True)
 # result = model.predict([site_plan_image])
 
